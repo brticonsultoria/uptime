@@ -1,31 +1,41 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
-
+owner: brticonsultoria
+repo: uptime
+user-agent: brticonsultoria
+secrets: []
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
-
+  - name: Site Afretador (.com)
+    url: https://afretador.com/
+  - name: Site Afretador (.com.br)
+    url: https://afretador.com.br/
+  - name: Portal Afretador
+    url: https://acesso.afretador.com.br/login
+  - name: Instalação do aplicativo
+    url: https://afretador.com/instalar
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.afretador.com
+  publish: true
+  name: Afretador — Status dos serviços
+  logoUrl: https://status.afretador.com/afretador.svg
+  faviconSvg: https://status.afretador.com/afretador.svg
+  introTitle: "**Disponibilidade do Afretador**"
+  introMessage: "Acompanhe a disponibilidade dos nossos sites e portal. As verificações são periódicas; esta página não confirma entrega de mensagens ou notificações aos motoristas."
+  theme: light
+  css: "body { font-family: 'DM Sans', Arial, sans-serif; background: #f7f9f7; color: #1a3431; } a { color: #21694f; }"
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: Afretador
+      href: https://afretador.com/
+    - title: Portal
+      href: https://acesso.afretador.com.br/
+i18n:
+  allSystemsOperational: Todos os serviços disponíveis
+  activeIncidents: Incidentes em andamento
+  pastIncidents: Histórico de incidentes
+  overallUptime: Disponibilidade geral
+  averageResponseTime: Tempo médio de resposta
+  liveStatus: Status atual
+  footer: "Afretador — Status dos serviços. Monitoramento por [Upptime](https://upptime.js.org)."
+commitMessages:
+  commitAuthorName: Fernando Fernandes
+  commitAuthorEmail: fernando@brticonsultoria.com.br
