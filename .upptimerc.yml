@@ -39,3 +39,6 @@ i18n:
 commitMessages:
   commitAuthorName: Fernando Fernandes
   commitAuthorEmail: fernando@brticonsultoria.com.br
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
