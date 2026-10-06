@@ -11,6 +11,11 @@ sites:
     url: https://acesso.afretador.com.br/login
   - name: Instalação do aplicativo
     url: https://afretador.com/instalar
+  - name: API Afretador
+    url: https://acesso.afretador.com.br/api/v1/ready
+    expectedStatusCodes: [200]
+    __dangerous__body_down_if_text_missing: '"status":"ready"'
+    maxResponseTime: 5000
 status-website:
   cname: status.afretador.com
   publish: true
@@ -18,7 +23,7 @@ status-website:
   logoUrl: https://status.afretador.com/afretador.svg
   faviconSvg: https://status.afretador.com/afretador.svg
   introTitle: "**Disponibilidade do Afretador**"
-  introMessage: "Acompanhe a disponibilidade dos nossos sites e portal. As verificações são periódicas; esta página não confirma entrega de mensagens ou notificações aos motoristas."
+  introMessage: "Acompanhe a disponibilidade dos nossos sites, portal e API. As verificações são periódicas; esta página não confirma entrega de mensagens ou notificações aos motoristas."
   theme: light
   css: "body { font-family: 'DM Sans', Arial, sans-serif; background: #f7f9f7; color: #1a3431; } a { color: #21694f; }"
   navbar:
