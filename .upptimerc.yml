@@ -42,3 +42,5 @@ commitMessages:
 
 workflowSchedule:
   uptime: "*/5 * * * *"
+
+skipDescriptionUpdate: true
